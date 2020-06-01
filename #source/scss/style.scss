@@ -64,6 +64,7 @@ body {
     width: 100%;
     height: 100%;
 		z-index: 3;
+		transition: all .3s ease 0s;
 	}
 }
 .change {
@@ -72,7 +73,8 @@ body {
 	left: 0;
 	width: 100%;
 	&:before {
-    background-color: #292e4b;
+		background-color: rgba(41, 46, 75, 0.9);
+		transition: all .1s ease 0s;
 	}
 	.li_logo {
 		display: none;
@@ -417,14 +419,14 @@ footer {
 				border:2px solid #ff5f6d;
 				font-size:24px;
 				background:#ff5f6d;
-				transition: all 0.3s;
+				transition: all .3s ease 0s;
 				color:#fff;
 				a  {
 					color: #fff;
 				}
 				&:hover {
 					background-color:transparent;
-					transition: all 0.3s;
+					transition: all .3s ease 0s;
 					a  {
 						color: #ff5f6d;
 					}
@@ -490,7 +492,7 @@ footer {
 			color: #ffffff;
 			font-weight: 700;
 			cursor: pointer;
-			transition: .2s;
+			transition: all .3s ease 0s;
 			&:hover {
 				background-color:transparent;
 				color: #ff5f6d;

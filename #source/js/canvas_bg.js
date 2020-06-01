@@ -242,7 +242,7 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
-    initBalls(50);
+    initBalls(30);
     window.requestAnimationFrame(render);
 }
 goMovie();
