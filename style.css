@@ -23,7 +23,9 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-body { font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 14px; line-height: 1.625; letter-spacing: .5px; background-image: url(images/bg.jpg); background-color: #1b1e30; background-repeat: no-repeat; background-position: 50% 50%; background-attachment: fixed; background-size: cover; }
+body { font-family: Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; font-size: 14px; line-height: 1.625; letter-spacing: .5px; position: relative; }
+
+body::after { content: ""; display: block; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: url(images/bg.jpg); background-color: #1b1e30; background-repeat: no-repeat; background-position: 50% 50%; background-attachment: fixed; background-size: cover; z-index: -1; }
 
 #nokey { position: fixed; }
 
